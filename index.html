@@ -3,6 +3,7 @@
 <html>
 
 <head>
+<<<<<<< HEAD
     <title>NCCU DCT</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,6 +28,255 @@
             <img src="images/star.png" style="width:100px; height:100px; position:absolute; top:50px; left:50px;" data-toggle="modal"
                 data-target="#exampleModalCenter" />
         </div>
+=======
+	<title>NCCU DCT</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		/* The Modal (background) */
+
+		.modal {
+			display: none;
+			/* Hidden by default */
+			position: fixed;
+			/* Stay in place */
+			z-index: 1;
+			/* Sit on top */
+			padding-top: 0px;
+			/* Location of the box */
+			padding-bottom: 0px;
+			/* Location of the box */
+			left: 0;
+			top: 0;
+			width: 50%;
+			/* Full width */
+			height: 300%;
+			/* Full height */
+			overflow: auto;
+			/* Enable scroll if needed */
+			background-color: rgb(0, 0, 0);
+			/* Fallback color */
+			background-color: rgba(0, 0, 0, 0.4);
+			/* Black w/ opacity */
+		}
+
+		/* Modal Content */
+
+		.modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 20px;
+			border: 10px solid #888;
+			width: 100%;
+			height: 100%;
+		}
+
+		/* The Close Button */
+
+		.close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a class="logo" href="index.html">NCCU DCT</a>
+		<nav>
+			<a href="#menu">Menu</a>
+		</nav>
+
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="elements.html">Elements</a>
+			</li>
+			<li>
+				<a href="generic.html">Generic</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Banner -->
+	<section id="banner">
+		<div class="inner">
+
+			<body onload="blink();">
+				<div id="tp">
+					<img src="images/star.png" id="star1" style="position:absolute;top:-10rem;left:10rem" height="50" width="50">
+					<img src="images/star.png" id="star2" style="position:absolute;top:0rem;left:20rem" height="50" width="50">
+				</div>
+			</body>
+
+			
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p style="color:blue">Some text in the Modal..</p>
+				</div>
+
+			</div>
+
+			<script>
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the button that opens the modal
+				var star = document.getElementById("star1");
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks the button, open the modal 
+				star.onclick = function () {
+					modal.style.display = "block";
+				}
+
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function () {
+					modal.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function (event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+				}
+
+				//star blink
+				function blink() {
+					//定義圖片的顯示和隱藏屬性
+					tp.style.visibility = (tp.style.visibility == "hidden") ? "visible" : "hidden";
+					//每0.5秒刷新一次
+					setTimeout("blink()", 1000);
+				}
+			</script>
+
+		</div>
+		<!--video autoplay loop muted playsinline src="images/banner.mp4"></video-->
+	</section>
+
+	<!-- Highlights -->
+	<section class="wrapper">
+		<div class="inner">
+			<header class="special">
+				<h2>Sem turpis amet semper</h2>
+				<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare
+					aliquet accumsan erat tempus amet porttitor.</p>
+			</header>
+			<div class="highlights">
+				<section>
+					<div class="content">
+						<header>
+							<a href="#" class="icon fa-vcard-o">
+								<span class="label">Icon</span>
+							</a>
+							<h3>Feugiat consequat</h3>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<a href="#" class="icon fa-files-o">
+								<span class="label">Icon</span>
+							</a>
+							<h3>Ante sem integer</h3>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<a href="#" class="icon fa-floppy-o">
+								<span class="label">Icon</span>
+							</a>
+							<h3>Ipsum consequat</h3>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<a href="#" class="icon fa-line-chart">
+								<span class="label">Icon</span>
+							</a>
+							<h3>Interdum gravida</h3>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<a href="#" class="icon fa-paper-plane-o">
+								<span class="label">Icon</span>
+							</a>
+							<h3>Faucibus consequat</h3>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<a href="#" class="icon fa-qrcode">
+								<span class="label">Icon</span>
+							</a>
+							<h3>Accumsan viverra</h3>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section id="cta" class="wrapper">
+		<div class="inner">
+			<h2>Curabitur ullamcorper ultricies</h2>
+			<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare
+				mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing.
+				Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+				adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+		</div>
+	</section>
+>>>>>>> 1b60de0e0cef3a060ec59aa6104b04e639b2bab5
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
