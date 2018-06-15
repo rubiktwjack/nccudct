@@ -29,18 +29,19 @@
 		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
-					<div class="modal-header">
+					<!--div class="modal-header">
 						<h5 class="modal-title" id="exampleModalLongTitle">Men's Name</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-					</div>
+					</div-->
+					<!--style="width:470px; height:500px;"-->
 					<div class="modal-body">
-						Put men's img
+						<img src="images/men.png" style="width:100%">
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
+					<!--div class=" modal-footer ">
+						<button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+					</div-->
 				</div>
 			</div>
 		</div>
@@ -48,26 +49,27 @@
 </body>
 
 <!--bootstrap init-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
- crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
- crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
- crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+ crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+ crossorigin="anonymous "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+ crossorigin="anonymous "></script>
 
 <!--firebase init-->
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js "></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js "></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="
+						 anonymous "></script>
 <script>
 	// Initialize Firebase
 	var config = {
-		apiKey: "AIzaSyATOeCpLhJOwj2vuxNxdxpks_Y6j-80T2Y",
-		authDomain: "avascript-final-miband2.firebaseapp.com",
-		databaseURL: "https://avascript-final-miband2.firebaseio.com",
-		projectId: "avascript-final-miband2",
-		storageBucket: "avascript-final-miband2.appspot.com",
-		messagingSenderId: "60786103386"
+		apiKey: "AIzaSyATOeCpLhJOwj2vuxNxdxpks_Y6j-80T2Y ",
+		authDomain: "avascript-final-miband2.firebaseapp.com ",
+		databaseURL: "https://avascript-final-miband2.firebaseio.com ",
+		projectId: "avascript-final-miband2 ",
+		storageBucket: "avascript-final-miband2.appspot.com ",
+		messagingSenderId: "60786103386 "
 	};
 	firebase.initializeApp(config);
 
@@ -80,7 +82,7 @@
 
 	//blink star
 	setInterval(function () {
-		$("#star").fadeOut(1000).fadeIn(1000);
+		$("#star ").fadeOut(1000).fadeIn(1000);
 	}, 200);
 
 </script>
